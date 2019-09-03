@@ -1,0 +1,4 @@
+# Output files
+*.o 
+*.class
+*.out 
