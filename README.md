@@ -9,8 +9,21 @@ Welcome to my SI session and to The Mechanics of Programming in general! Feel fr
   * [Tmux](#tmux)
 
 # <a name="aboutme"></a>About Me
+My name is Collin Bolles. I am a second year CS student at RIT. I am currently the
+treasurer for Engineers for a Sustainable World and a member of the firmware team on the
+Electric Vehicle Team. Love to read, especially science-fiction and fantasy, currently
+looking for a new book series. I love learning new things about just about anything.
 
 # <a name="usingrepository"></a>How to Use This Repository
+The goal of this repository is to provide you with examples, practice problems, and
+resources to make the class easier. I will not be putting up solutions or code snippets
+that you can use in your homework assignments. Doing so is against the
+[RIT Academic Integrity Policy](https://www.rit.edu/academicaffairs/policiesmanual/d080) 
+and can have serious consequences.
+
+Use the tools in here to help deepen your understanding, fill in any gaps, and practice
+what you have learned. Throughout the year I will update the repository with examples
+and practice problems that you can use. 
 
 # <a name="resources"></a>Resources
 

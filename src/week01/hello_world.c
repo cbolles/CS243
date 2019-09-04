@@ -1,5 +1,5 @@
 /**
- *  file: hello_world.c
+ * file: hello_world.c
  *
  * To compile to executable:
  *      gcc -std=c99 -Wall -Wextra -pedantic -o hello_world hello_world.c
