@@ -5,3 +5,17 @@ and some examples of more specific concepts that were discussed in class.
 # Goal
 The goal of this section is to re-enforce some of the basic concepts of C and to provide
 examples of some of the unique aspects of C.
+
+# Working with Multiple Files
+In the multiple files folder, there is an example of using a function defined in another file. There are a couple of important points in the
+example that were discusssed in class. I also noted some things that will be important later in the course.
+
+## Using -c vs -o
+In the example, as in class, -c and -o are used at different points. Using -c compiles the code, creating an object file, but doesn't link
+files. 
+
+To see the importance of this run the command `gcc -Wall -Wextra -pedantic -std=c99 -c main.c` in multiple\_files. You should see
+no error, which seems a little odd "what about the getArea function?".
+
+Using -c stops before linking, so gcc isn't interested in finding where getArea is actually defined. However after running
+`gcc -Wall -Wextra -pedantic -std=c99 -o main main.c` we get an error! -o is trying to connect the pieces, but getArea is not found.  
