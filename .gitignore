@@ -2,4 +2,6 @@
 *.o 
 *.class
 *.out
-main 
+main
+basic_arrays
+weird_arrays 

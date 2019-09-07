@@ -19,3 +19,10 @@ no error, which seems a little odd "what about the getArea function?".
 
 Using -c stops before linking, so gcc isn't interested in finding where getArea is actually defined. However after running
 `gcc -Wall -Wextra -pedantic -std=c99 -o main main.c` we get an error! -o is trying to connect the pieces, but getArea is not found.  
+
+# Using Arrays
+Arrays work a lot like arrays (not lists) in Java. They are created with a fixed size
+that can be interacted with using an index.
+
+There are some differences with Java however, C doesn't have the same safety nets as Java
+which you can see in the examples.
