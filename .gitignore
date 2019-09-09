@@ -4,4 +4,5 @@
 *.out
 main
 basic_arrays
-weird_arrays 
+weird_arrays
+getchar 
