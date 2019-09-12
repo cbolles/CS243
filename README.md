@@ -7,6 +7,7 @@ Welcome to my SI session and to The Mechanics of Programming in general! Feel fr
 * [Resources/Tools](#resources)
   * [Vim](#vim) 
   * [Tmux](#tmux)
+  * [GDB](#gdb)
 
 # <a name="aboutme"></a>About Me
 My name is Collin Bolles. I am a second year CS student at RIT. I am currently the
