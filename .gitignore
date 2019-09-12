@@ -9,4 +9,7 @@ getchar
 reverse
 getchar
 vowel_check
-size_of 
+size_of
+
+#temp files
+*.swp 

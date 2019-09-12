@@ -59,3 +59,15 @@ Here are some cheat sheets and ways to learn tmux. Note tmux is installed by def
 all lab machines. Don't try to install it again
 * [Cheat Sheet](https://tmuxcheatsheet.com/)
 * [Tmux Tutorial](https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/)
+
+## <a name="gdb"></a>GDB
+GDB is the GNU Project Debugger and is used for debugging from the command line. GDB has a lot of the features that you may have
+already used in Java and Python just from the command line.
+
+Using GDB is something that I wished I had learned more, but I always debugged using the "print shotgun" approach with is pretty
+slow. I would recommend learning more about it and use it during homeworks/projects.
+
+Here is some more information on GDB, cheat sheets, and other information.
+* [GDB Main Page](https://www.gnu.org/software/gdb/)
+* [GDB Cheat Sheet](https://kapeli.com/cheat_sheets/GDB.docset/Contents/Resources/Documents/index)
+* [GDB Command Details](https://betterexplained.com/articles/debugging-with-gdb/)
