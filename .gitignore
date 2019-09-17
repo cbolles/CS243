@@ -10,6 +10,7 @@ reverse
 getchar
 vowel_check
 size_of
+secret_code
 
 #temp files
 *.swp 
