@@ -21,12 +21,13 @@
 
 #define MAX_LINE_SIZE 100 //The biggest the line entered by the user can be
 
+
 void get_reversed(char original[], char reversed[]) {
-    size_t original_length = strlen(original); // Get the length of the original using strlen, note the type is size_t
-    for(int i = original_length - 1; i >= 0; i--) {
-            reversed[i] = original[original_length - i - 1];
+    size_t original_len = strlen(original); // Using the strlen from string, notice the varaible type!
+    for(size_t i = 0; i < original_len; i++) {
+        reversed[original_len - i - 1] = original[i];
     }
-    reversed[original_length] = '\0'; // WE HAVE TO ADD THE NULL TERMINATOR!!
+    reversed[original_len] = '\0'; // HAVE TO ADD NULL TERMINATOR
 }
 
 int main() {
