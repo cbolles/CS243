@@ -13,6 +13,7 @@ size_of
 secret_code
 reverse_line
 reverse_input
+good_memory
 
 #temp files
 *.swp 
