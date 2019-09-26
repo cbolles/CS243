@@ -8,6 +8,7 @@ Welcome to my SI session and to The Mechanics of Programming in general! Feel fr
   * [Vim](#vim) 
   * [Tmux](#tmux)
   * [GDB](#gdb)
+  * [Valgrind](#valgrind)
 
 # <a name="aboutme"></a>About Me
 My name is Collin Bolles. I am a second year CS student at RIT. I am currently the
@@ -72,3 +73,15 @@ Here is some more information on GDB, cheat sheets, and other information.
 * [GDB Main Page](https://www.gnu.org/software/gdb/)
 * [GDB Cheat Sheet](https://kapeli.com/cheat_sheets/GDB.docset/Contents/Resources/Documents/index)
 * [GDB Command Details](https://betterexplained.com/articles/debugging-with-gdb/)
+
+## <a name="valgrind"></a>Valgrind
+Valigrind  will be an extremely important tool for the rest of the semeseter. Even if you don't end up using gdb, you will need  to 
+use valgrind. Valgrind tells you when you did something wrong with memory management which will happen A LOT. Homework assignments
+will all require you to correctly use dynamic memory so valgrind will be your friend.
+
+Most of the features of valgrind we will not use in the class. We will be using the memory check functionality a lot. Really all you
+need to know about valgrind is running memory check using the following command.
+
+```
+valgrind --leak-check=full ./<my_program>
+```

@@ -12,6 +12,7 @@ vowel_check
 size_of
 secret_code
 reverse_line
+reverse_input
 
 #temp files
 *.swp 
