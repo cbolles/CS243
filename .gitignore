@@ -17,6 +17,7 @@ good_memory
 structs_practice
 pointers_example
 memory_diagram_practice
+malloc_example
 
 #temp files
 *.swp 
