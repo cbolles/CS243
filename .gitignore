@@ -18,6 +18,7 @@ structs_practice
 pointers_example
 memory_diagram_practice
 malloc_example
+passing_by_reference
 
 #temp files
 *.swp 
