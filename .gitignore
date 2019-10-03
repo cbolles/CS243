@@ -19,6 +19,7 @@ pointers_example
 memory_diagram_practice
 malloc_example
 passing_by_reference
+pointer_arithmetic
 
 #temp files
 *.swp 
