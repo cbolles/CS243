@@ -20,6 +20,8 @@ memory_diagram_practice
 malloc_example
 passing_by_reference
 pointer_arithmetic
+function_pointer
+binary_tree
 
 #temp files
 *.swp 
