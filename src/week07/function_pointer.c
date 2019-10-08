@@ -31,7 +31,7 @@ Dog *create_dog(char *name, int age) {
 
     // Populate the dog's name
     new_dog->name = malloc(strlen(name) + 1);
-    strcpy(name, new_dog->name);
+    strcpy(new_dog->name, name);
 
     // Populate the dog's age
     new_dog->age = age;
@@ -65,7 +65,7 @@ Cat *create_cat(char *name, int age) {
 
     // Populate name
     new_cat->name = malloc(strlen(name) + 1);
-    strcpy(name, new_cat->name);
+    strcpy(new_cat->name, name);
 
     // Populate age
     new_cat->age = age;
