@@ -22,6 +22,8 @@ passing_by_reference
 pointer_arithmetic
 function_pointer
 binary_tree
+*.dSYM/
+*.xml
 
 #temp files
 *.swp 
