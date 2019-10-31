@@ -1,0 +1,44 @@
+\documentclass[frontgrid,letterpaper,12pt]{flacards}
+
+
+% \usepackage[scaled=0.85]{beramono}
+\usepackage{color}
+
+\usepackage{etoolbox}
+\pretocmd{\card}{\def\curhint{#1}}{}{}
+
+\pagesetup{3}{6}
+
+\usepackage{xeCJK}
+
+% \setCJKmainfont{AR PL UKai CN}
+
+% \setmainfont{BitStream Vera Mono}
+
+
+\renewcommand{\cardtextstylef}{\Huge}
+\renewcommand{\cardtextstyleb}{\small}
+\renewcommand{\frfoot}{Exam 2}
+\renewcommand{\brfoot}{}
+
+% Temporarily disable new lines when displaying the riddle on the back
+
+%\renewcommand{\bcfoot}{\let\\\relax\footnotesize\curhint}
+% \renewcommand{\blfoot}{\footnotesize chris}
+% \renewcommand{\blfoot}{\footnotesize Ashley}
+% \renewcommand{\blfoot}{\footnotesize Casandra}
+% \renewcommand{\blfoot}{\footnotesize Jessica}
+
+%\renewcommand{\flhead}{\footnotesize\thecardno}
+\renewcommand{\brhead}{\footnotesize\thecardno}
+
+\begin{document}
+\card{struct}{A heterogenous collection, accessed by member name}
+\card{array}{A homogenous collection, accessed by index}
+\card{->}{Operator to access a member of a struct from a pointer to that struct}
+\card{padding}{Used to increase the size of a struct to allow members to align with the multiple of their data type size}
+\card{static (variable)}{Modifier which has the variable be maintained for the lifecycle of the program}
+\card{static (function)}{Modifier which makes the function "private" to that file}
+
+
+\end{document}
