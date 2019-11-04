@@ -3,8 +3,9 @@
 
 % \usepackage[scaled=0.85]{beramono}
 \usepackage{color}
-
 \usepackage{etoolbox}
+\usepackage{listings}
+
 \pretocmd{\card}{\def\curhint{#1}}{}{}
 
 \pagesetup{3}{6}
@@ -39,6 +40,20 @@
 \card{padding}{Used to increase the size of a struct to allow members to align with the multiple of their data type size}
 \card{static (variable)}{Modifier which has the variable be maintained for the lifecycle of the program}
 \card{static (function)}{Modifier which makes the function "private" to that file}
-
-
+\card{passed by reference}{How arrays are passed into functions}
+\card{passed by value}{How all other data types other then arrays are passed into functions}
+\card{Makefile}{Specifies how to create a project including dependencies and other commands}
+\card{l-value of a variable}{The address of the variable}
+\card{r-value}{The data held by a variable}
+\card{NULL pointer location}{Location 0 in memory}
+\card{malloc}{Function to grap uninitialized data from the heap}
+\card{calloc}{Function to grap initialized data (all 0's) from the heap}
+\card{free}{Function to deallocate space in the heap}
+\card{function pointer that can point to strcat}{char *(*cat)(char *, char*);}
+\card{interpreted language}{Language in which program translation takes place line by line when running}
+\card{compiled language}{Language in which program translation takes place all at once before execution}
+\card{strongly typed language}{A language that does not allow operations between different data types}
+\card{weakly typed language}{A language that allows flexibility with its type rules}
+\card{statically typed language}{A language where type checking takes place at compilation}
+\card{dynamically typed language}{A language where type checking takes place when the program is running}
 \end{document}
