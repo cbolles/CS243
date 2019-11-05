@@ -24,6 +24,7 @@ function_pointer
 binary_tree
 *.dSYM/
 *.xml
+echo
 
 #temp files
 *.swp 
