@@ -111,8 +111,8 @@ int max(int a, int b) {
     return a > b ? a : b;
 }
 
-int is_valid(int a) {
-    return a < 10;
+int is_valid() {
+    return 0;
 }
 
 int main() {
@@ -121,8 +121,8 @@ int main() {
 
     printf("The biggest number is %d\n", max(a, b));
     
-    if(is_valid(b)) {
-        printf("The value of b is less than 10;
+    if(is_valid()) {
+        printf("The value of b is less than 10");
     }
 
     return 0;
@@ -139,7 +139,7 @@ What are some methods to improve the ADT? The ADT only has to hold ints.
 
 int main() {
     // Create an array that has size of 5
-    Array my_array = create_array(5);
+    Array *my_array = create_array(5);
     // Set index 0 to 7
     set_element(my_array, 0, 7);
     printf("The element at index 0 is %d\n", get_element(my_array, 0));
