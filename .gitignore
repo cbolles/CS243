@@ -25,6 +25,8 @@ binary_tree
 *.dSYM/
 *.xml
 echo
+packed
+print_binary
 
 #temp files
 *.swp 
