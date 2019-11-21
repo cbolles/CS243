@@ -27,6 +27,12 @@ binary_tree
 echo
 packed
 print_binary
+even_odd
+palindrome
+packed_struct
+.DS_STORE
+read
+write
 
 #temp files
 *.swp 

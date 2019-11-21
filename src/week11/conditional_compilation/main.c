@@ -10,7 +10,7 @@
 
 #include <stdio.h> // printf
 
-#define SHOULD_HELLO 0
+#define SHOULD_HELLO 1
 
 int main() {
     #if SHOULD_HELLO

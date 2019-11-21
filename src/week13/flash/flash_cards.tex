@@ -1,0 +1,44 @@
+\documentclass[frontgrid,letterpaper,12pt]{flacards}
+
+
+% \usepackage[scaled=0.85]{beramono}
+\usepackage{color}
+\usepackage{etoolbox}
+\usepackage{listings}
+
+\pretocmd{\card}{\def\curhint{#1}}{}{}
+
+\pagesetup{3}{6}
+
+\usepackage{xeCJK}
+
+% \setCJKmainfont{AR PL UKai CN}
+
+% \setmainfont{BitStream Vera Mono}
+
+
+\renewcommand{\cardtextstylef}{\Huge}
+\renewcommand{\cardtextstyleb}{\small}
+\renewcommand{\frfoot}{}
+\renewcommand{\brfoot}{}
+\renewcommand{\brhead}{\footnotesize\thecardno}
+
+\begin{document}
+\card{Voltile}{Modifier to mark a variable to not be optimized during compilation}
+\card{Register}{Modifier to mark that a variable should be stored in a CPU register}
+\card{Restrict}{Modifier to let C know that only one pointer should exist for a specific variable}
+\card{Binary Streams}{Byte oriented file streams in which files are unstructured}
+\card{Text Streams}{Character oriented file streams where each byte is interpreted as a char}
+\card{fopen}{Function for opening a file in C}
+\card{fclose}{Function to close a file in C}
+\card{fread}{Function to read in raw bytes from a file}
+\card{fwrite}{Function to write raw bytes into a file}
+\card{fseek}{Function to move to an arbitrary location in a file}
+\card{fflush}{Forces a system call to write all data buffered for stream}
+\card{ftell}{Function to get the current location in the file}
+\card{fgetc}{Function to get a character from a file}
+\card{fputc}{Function to put a character into a file}
+\card{fgets}{Function to read in a line from a file}
+\card{fputs}{Function to write a line to a file}
+
+\end{document}
