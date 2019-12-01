@@ -3,6 +3,7 @@
 *.class
 *.out
 main
+bitwise
 basic_arrays
 weird_arrays
 getchar
