@@ -15,7 +15,7 @@ typedef enum grade_e Grade;
 struct professor_s {
     char * name;
     int age;
-    Grade (*calculate_grade)(int[], int);
+    Grade (*calculate_grade)(int grades[], int num_grads);
 };
 
 typedef struct professor_s Professor;

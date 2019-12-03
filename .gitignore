@@ -6,6 +6,7 @@ main
 bitwise
 basic_arrays
 weird_arrays
+threads_example
 getchar
 reverse
 critical
