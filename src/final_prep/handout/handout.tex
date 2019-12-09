@@ -1,0 +1,170 @@
+\documentclass[]{article}
+
+\usepackage[margin=0.75in]{geometry}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage [english]{babel}
+\usepackage [autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\begin{document}
+
+\section*{Activity 1 - Program Translation}
+Organize the following steps of program translation into the order that they occure. Linking,
+Compiling, Preprocessing, Assembling. Additionally, where does lexical, syntax, and semantic
+analysis take place? What are errors that can take place during each step of program translation?
+
+\section*{Activity 2 - Bitwise Operators}
+Your boss assigns you the task of reading in data from an accelerometer and pulling out the useful
+information. You look at the data sheet and see that each time you read from the accelerometer you
+get back an integer. Inside the integer is packed the status of the chip, the x acceleration, y
+acceleration, and z acceleration in that order. Write functions to pull out the information to 
+match the code snippet below using the fact that the largest a byte can hold is 255.
+\begin{lstlisting}[language=C]
+int main() {
+      uint32_t raw_value = read_acc(); // Assume this returns the value from the accelerometer
+      uint8_t status = get_status(raw_value);
+      uint8_t x_acc = get_x_acc(raw_value);
+      uint8_t y_acc = get_y_acc(raw_value);
+      uint8_t z_acc = get_z_acc(raw_value);
+
+      printf("The original value was %#010X\n", raw_value);
+      printf("The status was %#4X\n", status);
+      printf("The x_acc was %#4X\n", x_acc);
+      printf("The y_acc was %#4X\n", y_acc);
+      printf("The z_acc was %#4X\n", z_acc);
+
+      return 0;
+}
+\end{lstlisting}
+
+\section*{Activity 3 - System and Process Level IO}
+Fill in the table comparing system level IO to the process level IO that we use when writting code.
+
+\begin{centering}
+    \begin{tabular}{|c|p{4cm}|p{5cm}|}
+        \hline
+        & Our Program & OS \\
+        \hline
+        File Representation & & \\
+        \hline
+        Opening a File & & \\
+        \hline
+        Reading in byte oriented data & & \\
+        \hline
+        Return value when reading/writing byte oriented data & & \\
+        \hline
+        Uses buffereing to reduce calls to lower level & & \\
+        \hline
+        Close a file & & \\
+        \hline
+        Manipulate offset in file & & \\
+        \hline
+        Flush buffer & & \\
+        \hline
+    \end{tabular}
+\end{centering}
+
+\section*{Activity 4 - Unions}
+What is the output of the code snippet below.
+
+\begin{lstlisting}
+#include <stdio.h>
+
+union ex {
+    int num;
+    char c;
+};
+
+int main() {
+    union ex my_union;
+    my_union.num = 65;
+    printf("The size of union ex is %lu\n", sizeof(union ex));
+    printf("The char in my_union is %c\n", my_union.c);
+    my_union.c = 'B';
+    printf("The int in my_union is %d\n", my_union.num);
+}
+\end{lstlisting}
+
+\section*{Activity 5 - Pointers}
+Draw the memory diagram for the given program, is there an error? If there is, what is it? Otherwise
+what is the output.
+\begin{lstlisting}
+#include <stdio.h>
+
+  int main() {
+      int a = 10;
+      int x = 20;
+      int *b = &a;
+      int **c = &b;
+      **c = 20;
+      b = &x;
+      *c = 30;
+      *b = 30;
+      return 0;
+  }
+\end{lstlisting}
+
+\section*{Activity 6 - Enum Structs, Dynamic Memory}
+Implement the function make cat using the code below
+
+\begin{lstlisting}
+/** Create declaration of the enum below **/
+
+
+
+
+
+
+
+typedef struct cat_s {
+    char *name;
+    int age;
+    enum Color color;
+    void (*meow)();
+} Cat;
+
+void cat_speak() {
+    printf("Meow\n");
+}
+
+Cat *make_cat(char *name, int age, enum Color color) {
+
+
+
+
+
+
+}
+\end{lstlisting}
+
+\section*{Activity 8 - Processes}
+Create a process that outputs the current working directory. You can use the command pwd to get
+the current directory.
+\end{document}
