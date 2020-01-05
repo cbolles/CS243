@@ -1,43 +1,19 @@
+# Anything without an extension
+*
+!/**/
+!*.*
+
 # Output files
 *.o 
 *.class
 *.out
-main
-processes
-bitwise
-basic_arrays
-weird_arrays
-threads_example
-getchar
-reverse
-critical
-getchar
-basic_thread
-vowel_check
-size_of
-secret_code
-reverse_line
-reverse_input
-good_memory
-structs_practice
-pointers_example
-memory_diagram_practice
-malloc_example
-passing_by_reference
-pointer_arithmetic
-function_pointer
-binary_tree
-*.dSYM/
-*.xml
-echo
-packed
-print_binary
-even_odd
-palindrome
-packed_struct
-.DS_STORE
-read
-write
+*.log
+*.aux
 
-#temp files
-*.swp 
+# Debugging Files
+.dSYM/
+*.xml
+
+# temp files
+*.swp
+.DS_Store
