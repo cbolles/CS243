@@ -5,6 +5,7 @@ Welcome to my SI session and to The Mechanics of Programming in general! Feel fr
 * [About Me](#aboutme)
 * [How to Use This Repository](#usingrespository)
 * [Resources/Tools](#resources)
+  * [Unix/Linux](#unix)
   * [Vim](#vim) 
   * [Tmux](#tmux)
   * [GDB](#gdb)
@@ -28,6 +29,16 @@ what you have learned. Throughout the year I will update the repository with exa
 and practice problems that you can use. 
 
 # <a name="resources"></a>Resources
+
+## <a name="unix"></a>Unix/Linux
+In this class you will be expected to use Linux/Unix commands when working on your homework
+assignments. I attached a few cheatsheets with some of the most common unix commands that you
+will run into. You will find that they are not as hard as they seem and students generally pick up
+on them very quickly.
+
+* [Cheat Sheet 1](http://cheatsheetworld.com/programming/unix-linux-cheat-sheet/)
+* [Cheat Sheet 2](https://files.fosswire.com/2007/08/fwunixref.pdf)
+* [Learning the Shell](http://linuxcommand.org/lc3_learning_the_shell.php)
 
 ## <a name="vim"></a>Vim
 For editing files, I recommend using Vim. Vim is really powerful and very common among
