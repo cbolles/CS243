@@ -1,0 +1,83 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{preamble}
+\usepackage{array,hhline}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{outlines}
+
+\newcommand\course{CS 243}
+\newcommand\hwnumber{1}
+\newcommand\userID{Collin Bolles}
+
+\renewcommand{\theenumi}{\Roman{enumi}. }
+\renewcommand{\labelenumi}{\theenumi}
+
+\renewcommand{\theenumii}{\Alph{enumii}. }
+\renewcommand{\labelenumii}{\theenumii}
+
+\renewcommand{\theenumiii}{\roman{enumiii}. }
+\renewcommand{\labelenumiii}{\theenumiii}
+
+\renewcommand{\theenumiv}{\alph{enumiv} }
+\renewcommand{\labelenumiv}{\theenumiv}
+
+\begin{document}
+\textbf{\Large Exam 1}
+
+\begin{outline}[enumerate]
+
+\1 Assume you have two files, ``main.c'' and ``support.c'', write the code to compile and link the two
+files together with proper flags.
+
+\vspace{40mm}
+
+\1 Answer the following questions regarding Physical Address Space and Virtual Address Space
+    \2 Define Physical Address Space and Virtual Address Space
+
+\vspace{40mm}
+
+    \2 What are the benefits of using Virtual Address Space over Physical Address Space in a process?
+
+\vspace{40mm}
+
+\1 The following question relates to the program translation process in C
+    \2 Put the following in order Compilation, Preprocessing, Linking, Assembly
+
+\vspace{40mm}
+
+    \2 Define each step of progam translation
+
+\vspace{40mm}
+
+\1 The following question relates to the memory segments in a program.
+    \2 Draw the diagram of the memory segment in C
+
+\vspace{40mm}
+
+    \2 For each of the memory segments, define what is stored in them.
+        \3 Heap \underline{\hspace{50mm}}
+        \3 Data \underline{\hspace{50mm}}
+        \3 Text \underline{\hspace{50mm}}
+        \3 Stack \underline{\hspace{50mm}}
+
+\1 Answer the following questions regarind structs
+    \2 Create a struct that meets the following specifications.
+        \begin{itemize}
+            \item Must be named store
+            \item Must have an id of type long
+            \item Must have a name of type array of size 20
+        \end{itemize}
+
+\vspace{40mm}
+    
+    \2 What is the largest length string that can be held in name?
+
+\vspace{40mm}
+
+    \2 Create an instance of store with any values you like.
+
+\vspace{40mm}
+\end{outline}
+
+\end{document}
