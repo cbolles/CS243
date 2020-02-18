@@ -1,0 +1,52 @@
+\documentclass[frontgrid,letterpaper,12pt]{flacards}
+
+
+% \usepackage[scaled=0.85]{beramono}
+\usepackage{color}
+\usepackage{etoolbox}
+\usepackage{listings}
+
+\pretocmd{\card}{\def\curhint{#1}}{}{}
+
+\pagesetup{3}{6}
+
+\usepackage{xeCJK}
+
+% \setCJKmainfont{AR PL UKai CN}
+
+% \setmainfont{BitStream Vera Mono}
+
+
+\renewcommand{\cardtextstylef}{\Huge}
+\renewcommand{\cardtextstyleb}{\small}
+\renewcommand{\frfoot}{Exam 1}
+\renewcommand{\brfoot}{}
+
+% Temporarily disable new lines when displaying the riddle on the back
+
+%\renewcommand{\flhead}{\footnotesize\thecardno}
+\renewcommand{\brhead}{\footnotesize\thecardno}
+
+\begin{document}
+\card{Heap}{Location in memory where dynamically allocation storage is located}
+\card{Stack}{Location in memory where function calls are stored}
+\card{Text}{Location in memory where machine code is located}
+\card{Data}{Locaiton in memory where global data is stored}
+\card{Pointer}{Variable that stores an address}
+\card{Struct}{Data type in C that can hold multiple variables types}
+\card{Array}{Data type in C that can hold a fixed size number of same variable types}
+\card{Physical Memory}{``Real'' memory that the computer system sees}
+\card{Virtual Memory}{Memory that the process sees}
+\card{Make}{Command to use a Makefile to compile source}
+\card{std=c99}{gcc flag to use the C99 standard of C}
+\card{sizeof (``Hello'')}{6}
+\card{strlen (``Hello'')}{5}
+\card{NUL Byte}{`\\0' used to end a string}
+\card{fgets}{C method to get a string from a file}
+\card{\&}{Operand to get the address of a variable}
+\card{sizeof}{Function to get the number of bytes required to store a type or variable}
+\card{strncmp}{Compares the first n characters in a string}
+\card{argv}{Array of character arrays passed in from command line}
+\card{argc}{Keeps track of the number of command line arguments}
+\card{Passing by Reference}{In C, passing a pointer to our variable into a function}
+\end{document}
