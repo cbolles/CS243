@@ -54,9 +54,9 @@ int main() {
     printf("Person one equals person three %d\n", person_one->equals(person_one, person_three));
 
     // Free the dynamic memory of the people
-    free(person_one);
-    free(person_two);
-    free(person_three);
+    // free(person_one);
+    // free(person_two);
+    // free(person_three);
 
     return 0;
 }
