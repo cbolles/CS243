@@ -17,7 +17,6 @@ int main() {
         fgets(user_in, MAX_USER_IN, stdin);
         
         print_prompt = 1;
-                
         if(strcmp(user_in, ADD) == 0) {
             printf("What two numbers do you want to add?: ");
             float num_one;
