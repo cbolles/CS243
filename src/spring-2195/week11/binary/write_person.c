@@ -11,7 +11,7 @@ int main() {
     people[2] = new_person("Matt", 13);
     people[3] = new_person("Kyle", 41);
 
-    FILE *stream = fopen("people.save", "w");
+    FILE *stream = fopen("person.save", "w");
     save_people(people, NUM_PEOPLE, stream);
     fclose(stream);
 
