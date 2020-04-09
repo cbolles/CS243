@@ -24,6 +24,10 @@ short equals(person_t person_one, person_t person_two) {
     return strcmp(person_one->name, person_two->name) == 0 && person_one->age == person_two->age;
 }
 
+short example(person_t person_one, person_t person_two) {
+    return -1;
+}
+
 /**
  * Allocates space for a new person
  */
@@ -32,7 +36,7 @@ person_t new_person(char *name, int age) {
     new_person->name = malloc(strlen(name) + 1);
     strcpy(new_person->name, name);
     new_person->age = age;
-    new_person->equals = equals;
+    new_person->equals = example;
     return new_person;
 }
 
