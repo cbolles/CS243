@@ -27,13 +27,14 @@ int main() {
         // The child process gets 0 for the value returned from fork, if child_id == 0, then the process is running 
         case 0:
             printf("Hello from child process!\n");
+            sleep(10);
             printf("The child process is now ending\n");
-            _exit(EXIT_SUCCESS);
+            return EXIT_FAILURE;
             break;
         // Any other value is the id of the child which the parent process is given
         default:
             printf("Hello from parent process!\n");
-            printf("Parent is now waiting for the child to end\n");
+            printf("Parent is now waiting for the child to end in process %d\n", child_id);
             int status;
             wait(&status);
             printf("The child exited with status %d\n", status);
