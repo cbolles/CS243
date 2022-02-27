@@ -20,7 +20,6 @@ List *new_list() {
 }
 
 int list_get(List *self, size_t index) {
-
     return self->contents[index];
 }
 
@@ -34,6 +33,18 @@ void list_append(List *self, int new_elem) {
     self->length++;
 }
 
+void list_free(List *self) {
+    free(self->contents);
+    free(self);
+}
+
+void list_insert(List *self, size_t index, int elem) {
+    // Check to see if we are at capacity
+    // Yes => realloc with more memory
+    // Shift elements down
+    // insert
+}
+
 int main() {
 
     List *lst = new_list();
@@ -44,6 +55,8 @@ int main() {
     for(int i = 0; i < 3; i++) {
         printf("lst[%d] = %d\n", i,list_get(lst, i));
     }
+
+    list_free(lst);
 
     return 0;
 }
