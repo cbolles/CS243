@@ -5,7 +5,6 @@ int main() {
     Set set = new_set();
 
     add(set, 1);
-
     printf("Set contains 1: %d\n", contains(set, 1));
 
     add(set, 2);

@@ -21,13 +21,14 @@ typedef struct set_s* Set;
  * @param element The element to search through
  * @return The index in the set of the element or -1
  */
-static ssize_t find(Set set, int element) {
+static bool find(Set set, int element, size_t *result) {
     for (size_t i = 0; i < set->length; i++) {
         if (set->elements[i] == element) {
-            return i;
+            *result = i;
+            return true;
         }
     }
-    return -1;
+    return false;
 }
 
 Set new_set() {
@@ -58,21 +59,22 @@ void add(Set set, int element) {
 }
 
 void set_remove(Set set, int element) {
-    ssize_t index = find(set, element);
-    if (index < 0) {
+    size_t index;
+    if (!find(set, element, &index)) {
         return;
     }
 
     // Shift elements down
-    for (ssize_t i = index + 1; i < set->length; i++) {
-        set->elements[index - 1] = set->elements[index];
+    for (size_t i = index + 1; i < set->length; i++) {
+        set->elements[i - 1] = set->elements[i];
     }
 
     set->length--;
 }
 
 bool contains(Set set, int element) {
-    return find(set, element) > 0;
+    size_t index;
+    return find(set, element, &index);
 }
 
 void free_set(Set set) {
