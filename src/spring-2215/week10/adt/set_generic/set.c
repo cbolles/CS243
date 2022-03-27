@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdbool.h>
+#include <stdio.h>
 
 #define STARTING_CAPACITY 10
 
@@ -11,6 +12,8 @@ struct set_s {
     int (*cmp)(void *, void*);
 
     void (*free_elem)(void *);
+
+    void (*print_elem)(void *);
 };
 
 typedef struct set_s* Set;
@@ -19,13 +22,16 @@ typedef struct set_s* Set;
 
 #include "set.h"
 
-Set new_set(int (*cmp)(void *, void *)) {
+Set new_set(int (*cmp)(void *, void *), void (*free_elem)(void*),
+            void (*print_elem)(void *)) {
     Set set = (Set)malloc(sizeof(struct set_s));
 
     set->content = calloc(STARTING_CAPACITY, sizeof(void *));
     set->length = 0;
     set->capacity = STARTING_CAPACITY;
     set->cmp = cmp;
+    set->free_elem = free_elem;
+    set->print_elem = print_elem;
 
     return set;
 }
@@ -33,10 +39,13 @@ Set new_set(int (*cmp)(void *, void *)) {
 void set_remove(Set set, void *elem) {
     for(size_t i = 0; i < set->length; i++) {
         if(set->cmp(set->content[i], elem) == 0) {
+            set->free_elem(set->content[i]);
+
             for(size_t j = i + 1; j < set->length; j++) {
                 set->content[j - 1] = set->content[j];
             }
             set->length--;
+            return;
         }
     }
 }
@@ -74,4 +83,13 @@ void free_set(Set set) {
 
     free(set->content);
     free(set);
+}
+
+void print_set(Set set) {
+    printf("{");
+    for(size_t i = 0; i < set->length; i++) {
+        set->print_elem(set->content[i]);
+        printf(" ");
+    }
+    printf("}\n");
 }

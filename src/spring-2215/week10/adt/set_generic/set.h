@@ -7,7 +7,8 @@ typedef struct {}* Set;
 
 #endif
 
-Set new_set(int (*cmp)(void *, void*));
+Set new_set(int (*cmp)(void *, void*), void (*free_elem)(void*),
+            void (*print_elem)(void *));
 
 void set_remove(Set set, void *elem);
 
@@ -18,5 +19,7 @@ int set_empty(Set set);
 int set_contains(Set set, void *elem);
 
 void free_set(Set set);
+
+void print_set(Set set);
 
 #endif
