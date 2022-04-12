@@ -13,6 +13,8 @@ void *runner(void* param) {
         printf("Hello from thread %lu: #%d\n", thread_num, i);
     }
 
+    printf("Thread %lu has finished\n", thread_num);
+
     return NULL;
 }
 
