@@ -1,4 +1,6 @@
-Parent process is starting with PID: 75708
+Parent process is starting with PID: 77895
+oops
 Hello from parent
 Parent now waiting for child to complete
 Child process terminated
+The value of my_number: 0

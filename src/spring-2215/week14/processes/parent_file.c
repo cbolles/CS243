@@ -12,8 +12,10 @@ int main() {
     // NOTE: comment me out for something interesting
     fflush(my_file);
 
-    pid_t id = fork();
+    int my_number = 0;
 
+    // Create the child process
+    pid_t id = fork();
     switch(id) {
         case -1:
             fprintf(my_file, "Fork failed :(\n");
@@ -21,8 +23,10 @@ int main() {
         case 0:
             printf("Hello from child, press enter to stop the child\n");
             getc(stdin);
-            fclose(my_file);
-            exit(0);
+            my_number++;
+            fprintf(my_file, "oops\n");
+            fflush(my_file);
+            _exit(0);
         default:
             fprintf(my_file, "Hello from parent\n");
     }
@@ -33,6 +37,8 @@ int main() {
     wait(&status);
 
     fprintf(my_file, "Child process terminated\n");
+
+    fprintf(my_file, "The value of my_number: %d\n", my_number);
 
     fclose(my_file);
 
