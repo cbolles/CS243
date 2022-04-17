@@ -1,0 +1,4 @@
+Parent process is starting with PID: 75708
+Hello from parent
+Parent now waiting for child to complete
+Child process terminated
