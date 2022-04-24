@@ -26,7 +26,7 @@ int main() {
     int status;
     wait(&status);
 
-    printf("Child process terminated\n");
+    printf("Child process terminated: %d\n", status);
 
     return 0;
 

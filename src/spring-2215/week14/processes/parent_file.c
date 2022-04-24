@@ -10,7 +10,7 @@ int main() {
     fprintf(my_file, "Parent process is starting with PID: %d\n", getpid());
 
     // NOTE: comment me out for something interesting
-    fflush(my_file);
+    // fflush(my_file);
 
     int my_number = 0;
 
@@ -26,6 +26,7 @@ int main() {
             my_number++;
             fprintf(my_file, "oops\n");
             fflush(my_file);
+            printf("The number is %d\n", my_number);
             _exit(0);
         default:
             fprintf(my_file, "Hello from parent\n");
